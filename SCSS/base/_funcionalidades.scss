@@ -1,0 +1,38 @@
+//*VARIABLES
+
+$color-principal: yellow;
+$color-secundario: red;
+
+
+//*EXTENDS 
+
+%botonentrar {
+    text-decoration: none;
+    color: red;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+//*LISTA
+
+$colores:
+    red,
+    black,
+    white,
+    beige,
+    grey;
+
+$font-size: 20px,
+    30px,
+    40px,
+    50px;
+
+    //*mixin
+    @mixin flex($flex,$justify,$align)
+    {display:$flex;
+    justify-content: $justify;
+    align-items: $align;}
+
