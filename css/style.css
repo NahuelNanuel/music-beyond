@@ -369,7 +369,7 @@ main {
     }
 
     main {
-        padding-top: 140px !important;
+        padding-top: 180px !important;
         /* más alto para header móvil */
     }
 
@@ -381,9 +381,12 @@ main {
 }
 
 /* ------------------------------------MEDIA QUERIES-----------------------------------------*/
-@media (min-width: 576px) and (max-width: 766px) {
+@media (min-width: 350px) and (max-width: 766px) {
     header {
-        height: 100px;
+        min-height: 130px;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
     }
 
     header a img {
@@ -396,7 +399,7 @@ main {
     }
 
     main {
-        padding-top: 110px !important;
+        padding-top: 200px !important;
     }
 
     main section h1 {
