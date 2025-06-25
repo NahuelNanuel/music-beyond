@@ -51,7 +51,8 @@ header a img {
 header nav ul li {
     text-align: center;
     display: flex;
-    padding: 1%;
+    padding: 7px;
+    margin: 26.6px;
     display: inline-block;
 }
 
@@ -257,31 +258,6 @@ header nav ul li a:hover {
 }
 
 
-/*----footer------*/
-body footer section p {
-    font-size: x-large;
-    height: 18vh;
-    background-image: url(../img/fondo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: beige;
-}
-
-footer section {
-    background-image: url(../img/fondo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: beige
-}
-
-footer ul li {
-    color: red;
-    background-color: black;
-}
 
 /*  CORRECCIONES DE BOOTSTRAP */
 *,
@@ -306,28 +282,11 @@ img {
     max-width: 100%;
 }
 
-section h1,
-section p,
-body footer section p {
-    height: auto !important;
-    padding: 20px;
-}
-
 .carousel-item img {
     display: block;
     width: 100%;
     height: auto;
     border: none;
-}
-
-/* ESTE SACA LOS BORDES */
-header,
-footer,
-section,
-main {
-    border: none;
-    margin: 0;
-    padding: 0;
 }
 
 
