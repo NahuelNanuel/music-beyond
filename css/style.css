@@ -18,12 +18,7 @@ body {
 
 .navbar .nav-link {
     color: red !important;
-    font-size: 20px;
-}
-
-.navbar .nav-link:hover {
-    color: black !important;
-    font-weight: bold !important;
+    font-size: 16px;
 }
 
 
@@ -51,8 +46,7 @@ header a img {
 header nav ul li {
     text-align: center;
     display: flex;
-    padding: 7px;
-    margin: 26.6px;
+    padding: 34px;
     display: inline-block;
 }
 
@@ -185,28 +179,23 @@ main section {
 
 
 .galeria-grid {
+    justify-content: space-around;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 30% 30%;
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .galeria-grid .imagenes-grid {
     text-align: center;
-    border: solid 5px red;
+    border: solid 3px red;
     padding: 10px;
-    background-color: #0f0f0f;
+    margin: 20px;
 }
 
-.galeria-grid .imagenes-grid img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-}
 
 /*-------------CARRUSEL----------------*/
+
 .carousel-item img {
     height: 200px;
     object-fit: cover;
@@ -236,10 +225,6 @@ header nav ul li:hover {
     background-color: white;
 }
 
-header nav ul li a:hover {
-    color: black;
-    font-weight: bold;
-}
 
 .entrar:hover {
     background-color: darkred;
@@ -258,6 +243,30 @@ header nav ul li a:hover {
 }
 
 
+/*----footer------*/
+body footer section p {
+    font-size: x-large;
+    height: 18vh;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: beige;
+}
+
+footer section {
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: beige
+}
+
+footer ul li {
+    color: white;
+}
 
 /*  CORRECCIONES DE BOOTSTRAP */
 *,
@@ -282,11 +291,22 @@ img {
     max-width: 100%;
 }
 
-.carousel-item img {
-    display: block;
-    width: 100%;
-    height: auto;
+section h1,
+section p,
+body footer section p {
+    height: auto !important;
+    padding: 20px;
+}
+
+
+/* ESTE SACA LOS BORDES */
+header,
+footer,
+section,
+main {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -295,7 +315,6 @@ img {
 
     header {
         height: 130px;
-        /* header más alto en móvil */
         flex-direction: column;
         padding: 10px 0;
     }
@@ -329,7 +348,6 @@ img {
 
     main {
         padding-top: 180px !important;
-        /* más alto para header móvil */
     }
 
     main section h1 {
@@ -413,5 +431,29 @@ img {
     main section h1 {
         font-size: 30px;
         scroll-margin-top: 110px;
+    }
+
+}
+
+@media (max-width: 572px) {
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        padding-top: 70px;
     }
 }
